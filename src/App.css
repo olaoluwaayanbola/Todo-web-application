@@ -1,0 +1,10 @@
+.app-container{
+    background-color: blue;
+}
+.app-container header h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+}
