@@ -1,10 +1,13 @@
-.app-container{
-    background-color: blue;
-}
-.app-container header h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,500;1,100&display=swap');
+:root{
+    background-color: rgb(45, 45, 143); 
     color: whitesmoke;
+}
+.app-container .header{
+    width: 100%;
+    text-align: center;
+}
+.header h1{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 35px;
 }
