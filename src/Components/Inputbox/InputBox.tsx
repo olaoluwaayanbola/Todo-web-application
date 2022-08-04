@@ -20,4 +20,4 @@ const InputBox: React.FC<props> = ({ Todo, setTodo }) => {
     )
 }
 
-export default InputBox
+export default InputBox 
