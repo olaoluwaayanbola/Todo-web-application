@@ -1,6 +1,6 @@
 import React from 'react';
 import InputBox from './Components/Inputbox/InputBox';
-import InputList from './'
+// import InputList from '../'
 import { useState } from 'react';
 import {Todo} from './Model'
 import './App.css'
