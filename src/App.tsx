@@ -1,5 +1,6 @@
 import React from 'react';
 import InputBox from './Components/Inputbox/InputBox';
+import InputList from './'
 import { useState } from 'react';
 import {Todo} from './Model'
 import './App.css'
@@ -11,8 +12,8 @@ const App: React.FC = () => {
   const handleTodo = (event:React.FormEvent) => {
     event.preventDefault();
     if(Todo){
-      // setTodos{[...Todos,{id:Date.now,todo:Todo,isdone:false}]};
-      setTodo('')
+      setTodos([...Todos,{id:Date.now(),todo:Todo,isdone:false}]);
+      setTodo(' ')
     }
   }
   console.log(Todos)
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           <h1>TASK.ORG</h1>
         </div>
         <InputBox Todo={Todo} setTodo={setTodo} handleTodo = {handleTodo}></InputBox>
+        <InputList  Todo={Todos} setTodo={setTodo}  ></InputList>
       </div>
     </div>
   );
