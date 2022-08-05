@@ -3,14 +3,14 @@ import './Inputbox.css'
 interface props {
     Todo: string;
     setTodo: React.Dispatch<React.SetStateAction<string>>;
+    handleTodo : (event:React.FormEvent) => void
 }
-const handleSubmit = (event:any) => {
-    event.preventDefault();
-  }
-const InputBox: React.FC<props> = ({ Todo, setTodo }) => {
+
+
+const InputBox: React.FC<props> = ({ Todo, setTodo,handleTodo }) => {
     return (
         <div className='InputBox_container'>
-            <form action="" className='InputBox_form' onSubmit={handleSubmit}>
+            <form action="" className='InputBox_form' onSubmit={handleTodo } >
                 <input
                     type="text"
                     className='input_sec'
