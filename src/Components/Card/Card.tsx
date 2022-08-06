@@ -1,12 +1,15 @@
 import Reat from 'react'
+import { Todo } from '../../Model';
 import './Card.css' 
 interface Props{
-    setTodos:React.Dispatch<React.SetStateAction<string>>
+    Todo:String;
+    Todos:Todo[];
+    setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
-export const Card:React.FC<Props> = ({setTodos}) => {
+export const Card = ({Todo,Todos,setTodos}:Props) => {
     return(
-        <>
+        <div className = 'Card-Container' >
 
-        </>
+        </div>
     )
 }
