@@ -3,20 +3,21 @@ import { Todo } from '../../Model';
 import { Card } from '../Card/Card'
 import './InputList.css'
 interface Props {
-    Todo: String;
-    Todos: Todo[];
+    Todos: Array<Todo>;
     setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
-export const InputList: React.FC<Props> = ({ Todo, Todos, setTodos }) => {
+
+export const InputList: React.FC<Props> = ({ Todos, setTodos }) => {
     return (
         <div className='InputList_Container' >
-            {Todos.map(i => {
+            {Todos.map((todo) => {
                 return <Card
                     setTodos={setTodos}
-                    key={i.id}
-                    Todo={Todo}
+                    key={todo.id}
+                    Todo={todo}
                     Todos={Todos}
                 />
+
             })}
         </div>
     )

@@ -1,0 +1,28 @@
+.card_form {
+  width: 30vw;
+  min-height: 60px;
+  display: flex;
+  padding: 0 9px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: whitesmoke;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: rgb(117, 130, 169);
+}
+.Icons_box {
+  min-width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Icons {
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .card_form {
+    width: 100vw;
+  }
+}
