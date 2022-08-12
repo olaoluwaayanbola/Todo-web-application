@@ -1,5 +1,34 @@
 .InputList_Container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 30px;
+}
+.Active{
+    width: 32vw;
+    padding: 10px;
+    min-height: 15vh;
+    border-radius: 5px;
+    background-color: green;
+}
+.Completed{
+    width: 32vw;
+    padding: 10px;
+    min-height: 15vh;
+    border-radius: 5px;
+    background-color: red;
+}
+.Active-header{
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    display: block;
+    margin-bottom: 15px;
+}
+.Completed-header{
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    display: block;
+    margin-bottom: 15px;
 }

@@ -11,6 +11,7 @@ export const InputList: React.FC<Props> = ({ Todos, setTodos }) => {
     return (
         <div className='InputList_Container' >
             <div className="Active">
+                <span className="Active-header">Active</span>
                 {Todos.map((todo) => {
                     return <Card
                         setTodos={setTodos}
@@ -22,6 +23,9 @@ export const InputList: React.FC<Props> = ({ Todos, setTodos }) => {
                 })}
             </div>
             <div className="Completed">
+                <span className="Completed-header">
+                    Completed
+                </span>
                 {Todos.map((todo) => {
                     return <Card
                         setTodos={setTodos}
