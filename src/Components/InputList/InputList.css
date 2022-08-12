@@ -1,34 +1,34 @@
-.InputList_Container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 30px;
+.InputList_Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+}
+.Active,.Completed {
+  min-width: 45%;
+  padding: 10px;
+  min-height: 15vh;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.Completed {
+    background-color: rgb(44, 172, 44);
 }
 .Active{
-    width: 32vw;
-    padding: 10px;
-    min-height: 15vh;
-    border-radius: 5px;
-    background-color: green;
+    background-color: rgb(188, 46, 46);
 }
-.Completed{
-    width: 32vw;
-    padding: 10px;
-    min-height: 15vh;
-    border-radius: 5px;
-    background-color: red;
-}
+.Completed-header,
 .Active-header{
-    font-size: 20px;
-    font-weight: bold;
-    color: whitesmoke;
-    display: block;
-    margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+  display: block;
+  margin-bottom: 15px;
 }
-.Completed-header{
-    font-size: 20px;
-    font-weight: bold;
-    color: whitesmoke;
-    display: block;
-    margin-bottom: 15px;
-}
+@media screen and (max-width: 700px) {
+    .InputList_Container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+  }
