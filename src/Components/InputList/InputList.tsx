@@ -10,15 +10,27 @@ interface Props {
 export const InputList: React.FC<Props> = ({ Todos, setTodos }) => {
     return (
         <div className='InputList_Container' >
-            {Todos.map((todo) => {
-                return <Card
-                    setTodos={setTodos}
-                    key={todo.id}
-                    Todo={todo}
-                    Todos={Todos}
-                />
+            <div className="Active">
+                {Todos.map((todo) => {
+                    return <Card
+                        setTodos={setTodos}
+                        key={todo.id}
+                        Todo={todo}
+                        Todos={Todos}
+                    />
 
-            })}
+                })}
+            </div>
+            <div className="Completed">
+                {Todos.map((todo) => {
+                    return <Card
+                        setTodos={setTodos}
+                        key={todo.id}
+                        Todo={todo}
+                        Todos={Todos}
+                    />
+                })}
+            </div>
         </div>
     )
 }
