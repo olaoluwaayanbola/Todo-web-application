@@ -1,24 +1,26 @@
 .InputList_Container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   margin: 30px;
 }
-.Active,.Completed {
-  min-width: 45%;
+.Active,
+.Completed {
+  min-width: 80%;
   padding: 10px;
   min-height: 15vh;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 .Completed {
-    background-color: rgb(44, 172, 44);
+  background-color: rgb(20, 79, 20);
 }
-.Active{
-    background-color: rgb(188, 46, 46);
-}
+/* .Active {
+  background-color: rgb(17, 103, 39);
+} */
 .Completed-header,
-.Active-header{
+.Active-header {
   font-size: 20px;
   font-weight: bold;
   color: whitesmoke;
@@ -26,9 +28,13 @@
   margin-bottom: 15px;
 }
 @media screen and (max-width: 700px) {
-    .InputList_Container{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+  .InputList_Container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
+  .Active,
+  .Completed {
+    min-width: 95%;
+  }
+}
