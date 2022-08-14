@@ -2,7 +2,7 @@ import React from 'react';
 import InputBox from './Components/Inputbox/InputBox';
 import { InputList } from './Components/InputList/InputList';
 import { useState } from 'react';
-import {DragDropContext} from "react-beautiful-dnd"
+import { DragDropContext } from "react-beautiful-dnd"
 import { Todo } from './Model'
 import './App.css'
 
@@ -18,7 +18,7 @@ const App: React.FC = () => {
     }
   }
   return (
-    <DragDropContext onDragEnd={()=>{}}>
+    <DragDropContext onDragEnd={() => { }}>
       <div className="App">
         <div className="app-container">
           <div className="header">
